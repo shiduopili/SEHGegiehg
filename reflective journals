@@ -1,4 +1,4 @@
-#---------Data import  (the text from the pdf documents have been imported using "pdftools" package from R and saved into .xlsx); 
+#---------Data import  (the text from the pdf documents have been imported using "pdftools" package from R and saved into .xlsx with two columns: text and Year); 
 ## chinese texts were translated to English. 
 
 install.packages("readxl")
