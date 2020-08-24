@@ -5,7 +5,7 @@ install.packages("readxl")
 library(readxl)
 text <-
   read_excel(
-    "~/Desktop/SPHPC/By Projects/MVB/Data/Qualitative/data analysis/Y1 and Y2 English.xlsx"
+    "~/......xlsx"
   )
 
 #---------Data pre-processing
@@ -18,10 +18,6 @@ text$Text <- lemmatize_strings(text$Text)
 
 ##remove the numbers, hyperlinks, punctuations,unmeaningful words, keep English words only etc.
 library(tm)
-text$Text <-
-  str_replace_all(text$Text, "medical visit buddy", "")
-text$Text <-
-  str_replace_all(text$Text, "medical visit", "")
 text$Text <- removeNumbers(text$Text)
 text$Text <- removePunctuation(text$Text)
 text$Text <- trimws(text$Text)  ##remove white space
